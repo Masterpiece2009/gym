@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-ar="برنامج التمرين الأسبوعي" data-en="Weekly Workout Plan">برنامج التمرين الأسبوعي</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a class="logo" href="#" aria-label="Gym Direction">
+          <img src="icons/bench.svg" alt="logo" />
+          <span class="brand-text">
+            <span class="brand-main" data-ar="جيم دايركشن" data-en="Gym Direction">جيم دايركشن</span>
+            <span class="brand-sub" data-ar="خطتك الأسبوعية" data-en="Your weekly plan">خطتك الأسبوعية</span>
+          </span>
+        </a>
+      </div>
+
+      <nav class="header-right">
+        <div class="subtitle" data-ar="نظام تمارين منظم حسب الأيام" data-en="Workout plan organized by days">نظام تمارين منظم حسب الأيام</div>
+
+        <button id="langToggle" class="lang-toggle" aria-label="تبديل اللغة / Toggle language">🌍 EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="hero">
+      <h1 class="hero-title" data-ar="ابدأ التقدم اليوم" data-en="Start progressing today">ابدأ التقدم اليوم</h1>
+      <p class="hero-lead" data-ar="خطة تمارين متعددة اللغات، متجاوبة وخفيفة" data-en="Bilingual, responsive, lightweight workout site">خطة تمارين متعددة اللغات، متجاوبة وخفيفة</p>
+    </section>
+
+    <!-- Days grid -->
+    <section class="days-grid">
+      <!-- Saturday - Chest & Triceps -->
+      <article class="day-card" aria-labelledby="day-sat">
+        <header class="day-header">
+          <h2 id="day-sat" class="day-title" data-ar="السبت — صدر وتراي" data-en="Saturday — Chest & Triceps">السبت — صدر وتراي</h2>
+          <div class="muscles" data-ar="عضلات: صدر، ترايسبس" data-en="Muscles: Chest, Triceps">عضلات: صدر، ترايسبس</div>
+        </header>
+
+        <div class="exercises-grid">
+          <div class="exercise" data-ar="تجميع بالدامبل مسطح" data-en="Flat Dumbbell Bench Press">
+            <div class="icon-wrap">
+              <img src="icons/bench.svg" alt="bench" />
+            </div>
+            <div class="ex-name" data-ar="تجميع بالدامبل مسطح | 4×8-12" data-en="Flat Dumbbell Bench Press | 4×8-12">تجميع بالدامبل مسطح | 4×8-12</div>
+          </div>
+
+          <div class="exercise" data-ar="بار عالي | مسطرة مائلة" data-en="Incline Barbell Press">
+            <div class="icon-wrap">
+              <img src="icons/bench.svg" alt="incline" />
+            </div>
+            <div class="ex-name" data-ar="بار عالي | Incline Barbell Press" data-en="Incline Barbell Press">بار عالي | Incline Barbell Press</div>
+          </div>
+
+          <div class="exercise" data-ar="كيبول من فوق" data-en="Cable Crossover">
+            <div class="icon-wrap">
+              <img src="icons/cable.svg" alt="cable" />
+            </div>
+            <div class="ex-name" data-ar="كيبول من فوق | Cable Crossover" data-en="Cable Crossover">كيبول من فوق | Cable Crossover</div>
+          </div>
+
+          <div class="exercise" data-ar="فراشة | Pec Deck" data-en="Pec Deck">
+            <div class="icon-wrap">
+              <img src="icons/bench.svg" alt="pec" />
+            </div>
+            <div class="ex-name" data-ar="فراشة | Pec Deck" data-en="Pec Deck">فراشة | Pec Deck</div>
+          </div>
+
+          <div class="exercise" data-ar="مسطرة زجزاج تراي ضيق" data-en="Close Grip EZ Bar">
+            <div class="icon-wrap">
+              <img src="icons/arm.svg" alt="triceps" />
+            </div>
+            <div class="ex-name" data-ar="مسطرة زجزاج تراي ضيق" data-en="Close Grip EZ Bar">مسطرة زجزاج تراي ضيق</div>
+          </div>
+
+          <div class="exercise" data-ar="حبل تراي" data-en="Triceps Rope Pushdown">
+            <div class="icon-wrap">
+              <img src="icons/cable.svg" alt="rope" />
+            </div>
+            <div class="ex-name" data-ar="حبل تراي | Triceps Rope Pushdown" data-en="Triceps Rope Pushdown">حبل تراي | Triceps Rope Pushdown</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sunday - Back & Biceps -->
+      <article class="day-card" aria-labelledby="day-sun">
+        <header class="day-header">
+          <h2 id="day-sun" class="day-title" data-ar="الأحد — ظهر وبايسبس" data-en="Sunday — Back & Biceps">الأحد — ظهر وبايسبس</h2>
+          <div class="muscles" data-ar="عضلات: ظهر، بايسبس" data-en="Muscles: Back, Biceps">عضلات: ظهر، بايسبس</div>
+        </header>
+
+        <div class="exercises-grid">
+          <div class="exercise" data-ar="سحب أمامي عالي | Lat Pulldown" data-en="Lat Pulldown">
+            <div class="icon-wrap">
+              <img src="icons/back.svg" alt="lat pulldown" />
+            </div>
+            <div class="ex-name" data-ar="سحب أمامي عالي" data-en="Lat Pulldown">سحب أمامي عالي</div>
+          </div>
+
+          <div class="exercise" data-ar="سحب أرضي بالمثلث | Seated Row (V-Grip)" data-en="Seated Row (V-Grip)">
+            <div class="icon-wrap">
+              <img src="icons/back.svg" alt="row" />
+            </div>
+            <div class="ex-name" data-ar="سحب أرضي بالمثلث" data-en="Seated Row (V-Grip)">سحب أرضي بالمثلث</div>
+          </div>
+
+          <div class="exercise" data-ar="مسطرة على الكابل معكوس | Reverse Cable Curl" data-en="Reverse Cable Curl">
+            <div class="icon-wrap">
+              <img src="icons/cable.svg" alt="reverse curl" />
+            </div>
+            <div class="ex-name" data-ar="مسطرة على الكابل معكوس" data-en="Reverse Cable Curl">مسطرة على الكابل معكوس</div>
+          </div>
+
+          <div class="exercise" data-ar="تبادل دامبل باي | Alternating DB Curl" data-en="Alternating Dumbbell Curl">
+            <div class="icon-wrap">
+              <img src="icons/arm.svg" alt="db curl" />
+            </div>
+            <div class="ex-name" data-ar="تبادل دامبل باي" data-en="Alternating Dumbbell Curl">تبادل دامبل باي</div>
+          </div>
+
+          <div class="exercise" data-ar="هامر دامبل | Hammer Curl" data-en="Hammer Curl">
+            <div class="icon-wrap">
+              <img src="icons/arm.svg" alt="hammer curl" />
+            </div>
+            <div class="ex-name" data-ar="هامر دامبل" data-en="Hammer Curl">هامر دامبل</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Monday - Legs -->
+      <article class="day-card" aria-labelledby="day-mon">
+        <header class="day-header">
+          <h2 id="day-mon" class="day-title" data-ar="الاثنين — أرجل" data-en="Monday — Legs">الاثنين — أرجل</h2>
+          <div class="muscles" data-ar="عضلات: أرجل" data-en="Muscles: Legs">عضلات: أرجل</div>
+        </header>
+
+        <div class="exercises-grid">
+          <div class="exercise" data-ar="سكوات 4×12" data-en="Squat 4×12">
+            <div class="icon-wrap">
+              <img src="icons/squat.svg" alt="squat" />
+            </div>
+            <div class="ex-name" data-ar="سكوات 4×12" data-en="Squat 4×12">سكوات 4×12</div>
+          </div>
+
+          <div class="exercise" data-ar="جهاز أمامي 4×12 | Leg Extension" data-en="Leg Extension">
+            <div class="icon-wrap">
+              <img src="icons/squat.svg" alt="leg extension" />
+            </div>
+            <div class="ex-name" data-ar="جهاز أمامي 4×12" data-en="Leg Extension">جهاز أمامي 4×12</div>
+          </div>
+
+          <div class="exercise" data-ar="جهاز خلفي 4×12 | Leg Curl" data-en="Leg Curl">
+            <div class="icon-wrap">
+              <img src="icons/squat.svg" alt="leg curl" />
+            </div>
+            <div class="ex-name" data-ar="جهاز خلفي 4×12" data-en="Leg Curl">جهاز خلفي 4×12</div>
+          </div>
+
+          <div class="exercise" data-ar="مكبس خلفي 4×12 | Leg Press" data-en="Leg Press">
+            <div class="icon-wrap">
+              <img src="icons/squat.svg" alt="leg press" />
+            </div>
+            <div class="ex-name" data-ar="مكبس خلفي 4×12" data-en="Leg Press">مكبس خلفي 4×12</div>
+          </div>
+
+          <div class="exercise" data-ar="سمانة هاك سكوات | Calf Raise Hack Squat" data-en="Calf Raise Hack Squat">
+            <div class="icon-wrap">
+              <img src="icons/squat.svg" alt="calf" />
+            </div>
+            <div class="ex-name" data-ar="سمانة هاك سكوات" data-en="Calf Raise Hack Squat">��مانة هاك سكوات</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tuesday - Rest -->
+      <article class="day-card rest-day" aria-labelledby="day-tue">
+        <header class="day-header">
+          <h2 id="day-tue" class="day-title" data-ar="الثلاثاء — راحة" data-en="Tuesday — Rest Day">الثلاثاء — راحة</h2>
+          <div class="muscles" data-ar="يوم راحة واستشفاء" data-en="Recovery & Mobility Day">يوم راحة واستشفاء</div>
+        </header>
+
+        <div class="exercises-grid">
+          <div class="exercise rest" data-ar="استشفاء وتحرك" data-en="Recovery & Mobility">
+            <div class="icon-wrap">
+              <img src="icons/rest.svg" alt="rest" />
+            </div>
+            <div class="ex-name" data-ar="يوم راحة" data-en="Rest Day">يوم راحة</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Wednesday - Shoulders -->
+      <article class="day-card" aria-labelledby="day-wed">
+        <header class="day-header">
+          <h2 id="day-wed" class="day-title" data-ar="الأربعاء — أكتاف" data-en="Wednesday — Shoulders">الأربعاء — أكتاف</h2>
+          <div class="muscles" data-ar="عضلات: أكتاف" data-en="Muscles: Shoulders">عضلات: أكتاف</div>
+        </header>
+
+        <div class="exercises-grid">
+          <div class="exercise" data-ar="حبل من تحت | Low Cable Raise" data-en="Low Cable Raise">
+            <div class="icon-wrap">
+              <img src="icons/shoulder.svg" alt="low cable" />
+            </div>
+            <div class="ex-name" data-ar="حبل من تحت" data-en="Low Cable Raise">حبل من تحت</div>
+          </div>
+
+          <div class="exercise" data-ar="رفرفة جانبي | Lateral Raise" data-en="Lateral Raise">
+            <div class="icon-wrap">
+              <img src="icons/shoulder.svg" alt="lateral raise" />
+            </div>
+            <div class="ex-name" data-ar="رفرفة جانبي" data-en="Lateral Raise">رفرفة جانبي</div>
+          </div>
+
+          <div class="exercise" data-ar="تجميع دامبل | Dumbbell Press" data-en="Dumbbell Press">
+            <div class="icon-wrap">
+              <img src="icons/shoulder.svg" alt="db press" />
+            </div>
+            <div class="ex-name" data-ar="تجميع دامبل" data-en="Dumbbell Press">تجميع دامبل</div>
+          </div>
+
+          <div class="exercise" data-ar="ترابيس T-Bar | T-Bar Shrugs" data-en="T-Bar Shrugs">
+            <div class="icon-wrap">
+              <img src="icons/shoulder.svg" alt="shrugs" />
+            </div>
+            <div class="ex-name" data-ar="ترابيس T-Bar" data-en="T-Bar Shrugs">ترابيس T-Bar</div>
+          </div>
+
+          <div class="exercise" data-ar="كتف خلفي جهاز | Rear Delt Machine" data-en="Rear Delt Machine">
+            <div class="icon-wrap">
+              <img src="icons/shoulder.svg" alt="rear delt" />
+            </div>
+            <div class="ex-name" data-ar="كتف خلفي جهاز" data-en="Rear Delt Machine">كتف خلفي جهاز</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Thursday - Arms -->
+      <article class="day-card" aria-labelledby="day-thu">
+        <header class="day-header">
+          <h2 id="day-thu" class="day-title" data-ar="الخميس — ذراعين" data-en="Thursday — Arms">الخميس — ذراعين</h2>
+          <div class="muscles" data-ar="عضلات: بايسبس وترايسبس" data-en="Muscles: Biceps & Triceps">عضلات: بايسبس وترايسبس</div>
+        </header>
+
+        <div class="exercises-grid">
+          <div class="exercise" data-ar="كرسي ارتكاز بالبار | Preacher Curl" data-en="Preacher Curl">
+            <div class="icon-wrap">
+              <img src="icons/arm.svg" alt="preacher curl" />
+            </div>
+            <div class="ex-name" data-ar="كرسي ارتكاز بالبار" data-en="Preacher Curl">كرسي ارتكاز بالبار</div>
+          </div>
+
+          <div class="exercise" data-ar="هامر بالحبل كابل | Cable Hammer Curl" data-en="Cable Hammer Curl">
+            <div class="icon-wrap">
+              <img src="icons/cable.svg" alt="cable hammer" />
+            </div>
+            <div class="ex-name" data-ar="هامر بالحبل كابل" data-en="Cable Hammer Curl">هامر بالحبل كابل</div>
+          </div>
+
+          <div class="exercise" data-ar="تبادل دامبل جالس | Seated DB Curl" data-en="Seated Dumbbell Curl">
+            <div class="icon-wrap">
+              <img src="icons/arm.svg" alt="seated db" />
+            </div>
+            <div class="ex-name" data-ar="تبادل دامبل جالس" data-en="Seated Dumbbell Curl">تبادل دامبل جالس</div>
+          </div>
+
+          <div class="exercise" data-ar="حبل من تحت | Triceps Rope Pushdown" data-en="Triceps Rope Pushdown">
+            <div class="icon-wrap">
+              <img src="icons/cable.svg" alt="triceps rope" />
+            </div>
+            <div class="ex-name" data-ar="حبل من تحت" data-en="Triceps Rope Pushdown">حبل من تحت</div>
+          </div>
+
+          <div class="exercise" data-ar="مسطرة زجزاج ضيق | Close Grip EZ" data-en="Close Grip EZ">
+            <div class="icon-wrap">
+              <img src="icons/arm.svg" alt="close grip" />
+            </div>
+            <div class="ex-name" data-ar="مسطرة زجزاج ضيق" data-en="Close Grip EZ">مسطرة زجزاج ضيق</div>
+          </div>
+
+          <div class="exercise" data-ar="كيك باك كابل | Cable Kickback" data-en="Cable Kickback">
+            <div class="icon-wrap">
+              <img src="icons/cable.svg" alt="kickback" />
+            </div>
+            <div class="ex-name" data-ar="كيك باك كابل" data-en="Cable Kickback">كيك باك كابل</div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-ar="© 2026 جيم دايركشن. جميع الحقوق محفوظة." data-en="© 2026 Gym Direction. All rights reserved.">© 2026 جيم دايركشن. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
